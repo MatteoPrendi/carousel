@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
+    <script src="script.js" defer></script>
     <script
       src="https://kit.fontawesome.com/d4366a2081.js"
       crossorigin="anonymous"
@@ -18,35 +18,38 @@
   </head>
   <body>
     <main>
-      <section>
+      <section aria-label="Newest Photos">
         <div class="carousel" data-carousel>
-          <!-- The buttons -->
-          <button class="btn next" data-carousel-btn="prev">
-            <i class="fa-solid fa-2x fa-caret-right"></i>
+          <button class="carousel-button prev" data-carousel-button="prev">
+            <i class="fa-solid fa-caret-left"></i>
           </button>
-          <button class="btn prev" data-carousel-btn="next">
-            <i class="fa-solid fa-2x fa-caret-left"></i>
+          <button class="carousel-button next" data-carousel-button="next">
+            <i class="fa-solid fa-caret-right"></i>
           </button>
-
-          <!-- Carousel slides -->
           <ul data-slides>
             <li class="slide" data-active>
-              <img src="Images/image#1.jpg" />
+              <img
+                src="https://source.unsplash.com/78A265wPiO4"
+                alt="Nature Image #1"
+              />
             </li>
             <li class="slide">
-              <img src="Images/image#2.jpg" />
+              <img
+                src="https://source.unsplash.com/eOpewngf68w"
+                alt="Nature Image #2"
+              />
             </li>
             <li class="slide">
-              <img src="Images/image#3.jpg" />
-            </li>
-            <li class="slide">
-              <img src="Images/image#4.jpg" />
+              <img
+                src="https://source.unsplash.com/ndN00KmbJ1c"
+                alt="Nature Image #3"
+              />
             </li>
           </ul>
         </div>
       </section>
       <div class="author">
-        <p>Developed by <a href="github.com">Matteo Prendi</a></p>
+        <p>Developed by <a href="https://www.linkedin.com/in/matteo-prendi/">Matteo Prendi</a></p>
       </div>
     </main>
   </body>
